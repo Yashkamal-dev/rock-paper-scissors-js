@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Ppaer Scissor</title>
+    <title>Rock Ppaer Scissors</title>
     <link rel="stylesheet" href="rockPaperScissor.css" />
   </head>
   <body>
@@ -15,19 +15,19 @@
     <main>
       <!-- heading -->
       <div class="heading-container">
-        <h1 class="game-heading">Rock Paper Scissor</h1>
+        <h1 class="game-heading">Rock Paper Scissors</h1>
       </div>
 
       <!-- logo container -->
       <div class="logos-container">
         <button id="Rock" class="game-icon rock">
-          <img src="assets/rock.png" alt="logo pf rock" />
+          <img class="image" src="assets/rock.png" alt="logo pf rock" />
         </button>
         <button id="Paper" class="game-icon paper">
-          <img src="assets/paper.png" alt="logo of Paper" />
+          <img class="image" src="assets/paper.png" alt="logo of Paper" />
         </button>
         <button id="Scissor" class="game-icon scissor">
-          <img src="assets/scissor.png" alt="image of scissor" />
+          <img class="image" src="assets/scissor.png" alt="image of scissor" />
         </button>
       </div>
 
@@ -36,20 +36,17 @@
         <div class="user-score">
           <div id="score-user" class="score">0</div>
           <div id="user-score" class="score-msg-user score-label">You</div>
-          <div id="dis-user"></div>
+          <div id="dis-user" class="dis"></div>
         </div>
         <div class="comp-score">
           <div id="score-comp" class="score">0</div>
           <div id="comp-score" class="score-msg-comp score-label">Computer</div>
-          <div id="dis-comp"></div>
+          <div id="dis-comp" class="dis"></div>
         </div>
       </div>
 
-      <!-- <div class="msgcon">
-        <div id="message" class="message"><p>Start a fresh round!</p></div>
-      </div> -->
       <div class="msgcon">
-        <button id="message" class="message">Start a fresh round!</button>
+        <button id="message" class="message">Make your move!</button>
       </div>
     </main>
     <script src="rockPaperScissor.js"></script>

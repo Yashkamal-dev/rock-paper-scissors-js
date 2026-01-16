@@ -22,7 +22,7 @@ user.forEach((choice) => {
     // accesing our choice
     userChoice = choice.id;
 
-    // selecting computer choice arndom
+    // selecting computer choice random
     idx = Math.floor(Math.random() * 3);
     compChoice = choices[idx];
 
@@ -31,7 +31,7 @@ user.forEach((choice) => {
     console.log("comp choice = ", compChoice);
 
     if (userChoice === compChoice) {
-      finalMessage = "Draw";
+      finalMessage = "It's a Draw";
       msg.innerText = finalMessage;
       msg.style.backgroundColor = "rgb(39, 57, 194)";
 
@@ -43,7 +43,7 @@ user.forEach((choice) => {
       (userChoice === "Paper" && compChoice === "Rock") ||
       (userChoice === "Rock" && compChoice === "Scissor")
     ) {
-      finalMessage = "YOU won!";
+      finalMessage = "YOU win!";
       msg.innerText = finalMessage;
       msg.style.backgroundColor = "green";
 
@@ -55,7 +55,7 @@ user.forEach((choice) => {
       userScore++;
       userScoreBoard.innerText = userScore;
     } else {
-      finalMessage = "You loss!";
+      finalMessage = "You lose!";
       msg.innerText = finalMessage;
       msg.style.backgroundColor = "red";
 

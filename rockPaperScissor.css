@@ -6,7 +6,6 @@ just making sure user = you. */
 * {
   margin: 0;
   padding: 0;
-  /* cursor:pointer */
 }
 
 body {
@@ -18,35 +17,27 @@ body {
   color: rgb(255, 224, 143);
   background-color: rgb(6, 7, 113);
   height: 10vh;
-  font-size: 3vmin;
+  font-size: 1.7em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* the container tag is enough for designing */
-/* .game-heading {
-    text-align: center;
-    height: 10vh;
-    font-size: 5vmin;
-    display: block;
-} */
-
 /* styling logos container*/
 .logos-container {
-  /* background-color: rgb(37, 198, 85); */
-  height: 40vh; /* 50vh was before*/
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 7%;
-  margin-top: 7vh;
+  row-gap: 3%;
+  margin-top: 5vh;
 }
 
 /* each game icon */
 .game-icon {
   border: 2px solid black;
-  /* padding: 5vmax; */
   padding: 5vmin;
   object-fit: cover;
   border-radius: 100%;
@@ -56,14 +47,11 @@ body {
 .game-icon:hover {
   cursor: pointer;
   box-shadow: 12px 0px 2px 1px rgba(0, 0, 255, 0.334);
-  /* box-sizing: border-box; */
-  /* border: 10px solid black; */
 }
 
 /* changing background fo each icon */
 .rock {
   background-color: rgb(247, 158, 158);
-  /* border: none; */
 }
 
 .paper {
@@ -76,27 +64,22 @@ body {
 
 /* for score */
 .score-container {
-  /* background-color: chocolate; */
   height: 20vh;
   text-align: center;
   display: flex;
   justify-content: center;
-  /* justify-content: space-evenly; */
   align-items: center;
   gap: 11%;
   font-size: 3em;
-  /* margin-bottom: 3vh; */
 }
 
 /* for game message */
-
 .msgcon {
-  /* background-color :blueviolet; */
   display: flex;
   text-align: center;
-  font-size: 3em;
   justify-content: center;
   align-items: center;
+  font-size: 3em;
   margin-top: 5vh;
 }
 
@@ -109,7 +92,48 @@ body {
   width: 47vw;
   font-size: 2.5rem;
   display: flex;
-  /* padding: 5%; */
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 690px) {
+  .heading-container {
+    padding: 5px;
+    font-size: 1.3rem;
+  }
+
+  .game-icon {
+    padding: 5vmin;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  .image {
+    height: 100px;
+  }
+
+  .score-container {
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-weight: 520;
+    font-size: 1.7em;
+  }
+
+  .dis {
+    width: max-content;
+  }
+
+  .msgcon {
+    margin-top: 3vh;
+  }
+
+  .message {
+    height: 10vh;
+    width: 47vw;
+    font-size: 1.5rem;
+  }
 }
